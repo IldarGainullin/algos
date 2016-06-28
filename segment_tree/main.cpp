@@ -29,7 +29,7 @@ int func(int a, int b) {
 }
 
 int mod(int a, int b) {
-    a = b;
+    return b;
 }
 
 void push(int v, int l, int r) {
