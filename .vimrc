@@ -10,8 +10,9 @@ autocmd filetype cpp nnoremap<F5> :!g++ % -ggdb -std=c++11 -o %:r && ./%:r <CR>
 au BufNewFile *.cpp 0r ~/.vim/sf/std.cpp
 nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
-map <C-l> :tabr<cr>
+map <C-l> :tabnext<cr>
+map <C-h> :tabprev<cr>
+map <C-t> :tabnew <cr>
+map <C-w> :q! <cr>
 
-map <C-h> :tabl<cr>
 
-map <C-t> :tabn<cr>
